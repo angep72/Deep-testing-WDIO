@@ -1,4 +1,3 @@
-const LoginPage = require ('../Pages/login.page');
 
 class LoginPage {
     get UsernameTextBox (){
@@ -24,3 +23,4 @@ class LoginPage {
         await expect(await $(this.FlashMessage).getText()).toContain(msg);
     }
 }
+module.exports = new LoginPage();
