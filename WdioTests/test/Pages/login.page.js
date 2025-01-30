@@ -20,7 +20,7 @@ class LoginPage {
 
 
     }      async GetFlashMessageText(msg){
-        await expect(await $(this.FlashMessage).getText()).toContain(msg);
+      await expect(await $(this.FlashMessage).getText()).toContain(msg);
     }
 }
 module.exports = new LoginPage();
