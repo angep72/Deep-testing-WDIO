@@ -5,8 +5,7 @@ describe('Demo test for login', function() {
         await $('#password').setValue('SuperSecretPassword!');
         await $('button[type="submit"]').click();
         
-        const flashMessage = await $('#flash');
-        await expect(await flashMessage.getText()).toContain('You logged into a secure area!');
+        await expect(await $('#flash').getText()).toContain('You logged into a secure area!');
         // Or alternatively:
         // await expect(flashMessage).toHaveText(expect.stringContaining('You logged into a secure area!'));
         
