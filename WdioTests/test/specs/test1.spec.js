@@ -1,5 +1,6 @@
 describe("Demo ",function(){
-    it("should open the login page",  () => {
-     browser.url("https://www.saucedemo.com/");
+    it("should open the login page", async () => {
+         browser.url("https://www.google.com/");
+         await $('#APjFqb').setValue('webdriverio');
     })
 })
