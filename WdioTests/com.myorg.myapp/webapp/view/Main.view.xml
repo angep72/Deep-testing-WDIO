@@ -1,0 +1,67 @@
+<mvc:View
+	controllerName="com.myorg.myapp.controller.Main"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core">
+    <Page title="User Registration Form">
+        <content>
+            <VBox class="sapUiSmallMargin">
+                <form:SimpleForm 
+                    id="registrationForm"
+                    editable="true"
+                    layout="ResponsiveGridLayout"
+                    title="Registration"
+                    xmlns:form="sap.ui.layout.form">
+                    
+                    <form:content>
+                        <Label text="{i18n>FIRSTNAME_LABEL}" />
+                        <Input 
+                            id="firstName"
+                            value="{/firstName}"
+                            required="true"
+                            valueState="{= ${viewModel>/firstNameError} ? 'Error' : 'None'}"
+                            valueStateText="{i18n>FIRSTNAME_REQUIRED}" />
+                        
+                        <Label text="{i18n>LASTNAME_LABEL}" />
+                        <Input 
+                            id="lastName"
+                            value="{/lastName}"
+                            required="true"
+                            valueState="{= ${viewModel>/lastNameError} ? 'Error' : 'None'}"
+                            valueStateText="{i18n>LASTNAME_REQUIRED}" />
+                        
+                        <Label text="{i18n>EMAIL_LABEL}" />
+                        <Input 
+                            id="email"
+                            value="{/email}"
+                            type="Email"
+                            required="true"
+                            valueState="{= ${viewModel>/emailError} ? 'Error' : 'None'}"
+                            valueStateText="{i18n>EMAIL_INVALID}" />
+                        
+                        <Label text="{i18n>AGE_LABEL}" />
+                        <Input 
+                            id="age"
+                            value="{/age}"
+                            type="Number"
+                            valueState="{= ${viewModel>/ageError} ? 'Error' : 'None'}"
+                            valueStateText="{i18n>AGE_RANGE}" />
+                    </form:content>
+                </form:SimpleForm>
+                
+                <HBox justifyContent="Center" class="sapUiSmallMarginTop">
+                    <Button 
+                        text="{i18n>SUBMIT_BUTTON}" 
+                        type="Emphasized" 
+                        press="onSubmit" />
+                    <Button 
+                        text="{i18n>RESET_BUTTON}" 
+                        type="Default" 
+                        press="onReset" 
+                        class="sapUiSmallMarginBegin"/>
+                </HBox>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
