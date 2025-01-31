@@ -1,4 +1,3 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","4546","should login with valid credentials","","Thu Jan 30 09:05:39 SAST 2025","passed","Thu Jan 30 09:05:43 SAST 2025","","My Login application","",""
-"","1843","should open the login page","","Thu Jan 30 09:50:28 SAST 2025","passed","Thu Jan 30 09:50:30 SAST 2025","","Demo ","",""
-"","6","My first test ","","Thu Jan 30 09:33:52 SAST 2025","passed","Thu Jan 30 09:33:52 SAST 2025","","Demo test ","",""
+"","17299","Login Test","","Thu Jan 30 17:29:13 SAST 2025","passed","Thu Jan 30 17:29:30 SAST 2025","","Demo test for login","",""
+"","8793","should validate input length for username","","Thu Jan 30 17:24:01 SAST 2025","passed","Thu Jan 30 17:24:10 SAST 2025","","Input length validation","",""
