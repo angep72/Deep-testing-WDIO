@@ -13,9 +13,9 @@ describe("Input length validation", function () {
 
 	it("should validate input length for the second username and it should be greater than 10 ", async () => {
 		// Find the username input field
-		const usernameInput = await $("#__component0---main--firstName-inner");
-		await usernameInput.setValue("Q12ejyhdtdtegfsfssfdtev");
-		const validate_length = await usernameInput.getValue();
+		const lastNameInput = await $("#__component0---main--lastName-inner");
+		await lastNameInput.setValue("Q12ejyhdtdtegfsfssfdtev");
+		const validate_length = await lastNameInput.getValue();
 		expect(validate_length.length).toBeGreaterThan(10);
 		expect(validate_length).toMatch(/^[A-Z]/);
 	});
