@@ -25,8 +25,6 @@ describe("Input length validation", function () {
 
         const validate_email = await emailInput.getValue();
         expect(validate_email).toMatch(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/);
-
-
     })
     
 });

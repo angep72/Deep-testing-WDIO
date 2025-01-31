@@ -1,3 +1,6 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1810","should validate input length for the second username and it should be greater than 10 ","","Fri Jan 31 16:58:00 SAST 2025","passed","Fri Jan 31 16:58:01 SAST 2025","","Input length validation","",""
+"","1863","should validate input length for username","","Fri Jan 31 16:47:01 SAST 2025","passed","Fri Jan 31 16:47:03 SAST 2025","","Input length validation","",""
+"","2172","should validate input length for firstName so that it won't exceed 12 char","","Fri Jan 31 16:57:57 SAST 2025","passed","Fri Jan 31 16:58:00 SAST 2025","","Input length validation","",""
 "","11246","should login with valid credentials","","Fri Jan 31 14:58:39 SAST 2025","passed","Fri Jan 31 14:58:50 SAST 2025","","My Login application","",""
-"","11164","should validate input length for username","","Fri Jan 31 16:03:09 SAST 2025","broken","Fri Jan 31 16:03:20 SAST 2025","","Input length validation","",""
+"","1778","should validate a correct email format","","Fri Jan 31 16:58:01 SAST 2025","failed","Fri Jan 31 16:58:03 SAST 2025","","Input length validation","",""
