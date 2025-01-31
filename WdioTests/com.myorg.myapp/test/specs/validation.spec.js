@@ -19,5 +19,14 @@ describe("Input length validation", function () {
 		expect(validate_length.length).toBeGreaterThan(10);
 		expect(validate_length).toMatch(/^[A-Z]/);
 	});
+    it ("should validate a correct email format", async () => {
+        const emailInput = await $("#__component0---main--email-inner");
+        await emailInput.setValue("gmailcom@ COM");
+
+        const validate_email = await emailInput.getValue();
+        expect(validate_email).toMatch(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/);
+
+
+    })
     
 });
