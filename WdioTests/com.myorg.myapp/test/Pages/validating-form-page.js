@@ -1,17 +1,24 @@
 class FormValidation {
-	get firstName() {
+	get firstNamef() {
 		return $("#__component0---main--firstName-inner");
 	}
-	get lastName() {
+	get lastNamef() {
 		return $("#__component0---main--lastName-inner");
 	}
-	get email() {
+	get emailf() {
 		return $("#__component0---main--email-inner");
 	}
-	async validateForm(firstName, lastName, email) {
-		this.firstName(firstName);
-		this.lastName(lastName);
-		this.email(email);
+	async validateForm(Name) {
+		const result = await this.firstNamef().setValue(Name);
+        console.log(result);
+        const validate_length = await result.getValue();
+        expect(validate_length.length).toBeLessThanOrEqual(12);
 	}
+    async validateEmail(Email) {
+        await this.emailf().setValue(Email);
+        const validate_email = await this.emailf().getValue();
+        expect(validate_email).toMatch(/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
+
+    }
 }
 module.exports = new FormValidation();
