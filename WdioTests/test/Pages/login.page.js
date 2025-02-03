@@ -9,6 +9,7 @@ class LoginPage {
     get LoginButton (){
         return $('button[type="submit"]');
     }
+    //this is the flash 
     get FlashMessage (){
         return $('#flash');
     }
